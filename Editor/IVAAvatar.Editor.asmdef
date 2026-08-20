@@ -1,0 +1,18 @@
+{
+    "name": "IVAAvatar.Editor",
+    "rootNamespace": "IVAAvatar.EditorTools",
+    "references": [
+        "IVAAvatar.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

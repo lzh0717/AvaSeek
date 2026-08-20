@@ -1,0 +1,21 @@
+{
+  "name": "com.zihanliu.iva-avatar",
+  "version": "0.1.0",
+  "displayName": "IVA Avatar",
+  "description": "A fully parameterised, procedurally drawn in-vehicle assistant face for Unity. Every facial feature is a named, ranged parameter, so the avatar can be driven by sliders, a script, a CSV replay, or an optimizer without any per-parameter code. No art assets, no external dependencies.",
+  "unity": "2021.3",
+  "keywords": [
+    "avatar",
+    "procedural",
+    "hci",
+    "in-vehicle",
+    "parameterised",
+    "research"
+  ],
+  "author": {
+    "name": "Zihan Liu"
+  },
+  "dependencies": {
+    "com.unity.ugui": "1.0.0"
+  }
+}
