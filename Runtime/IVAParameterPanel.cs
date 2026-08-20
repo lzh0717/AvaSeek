@@ -38,7 +38,7 @@ namespace IVAAvatar
 
         void Start()
         {
-            if (avatar == null) avatar = FindObjectOfType<IVARenderer>();
+            if (avatar == null) avatar = FindFirstObjectByType<IVARenderer>();
             if (avatar == null)
             {
                 Debug.LogWarning("[IVA] IVAParameterPanel: no IVARenderer in the scene.");
@@ -77,7 +77,7 @@ namespace IVAAvatar
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             canvasGO.GetComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ConstantPixelSize;
 
-            if (FindObjectOfType<UnityEngine.EventSystems.EventSystem>() == null)
+            if (FindFirstObjectByType<UnityEngine.EventSystems.EventSystem>() == null)
             {
                 new GameObject("EventSystem",
                     typeof(UnityEngine.EventSystems.EventSystem),

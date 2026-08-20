@@ -16,7 +16,7 @@ namespace IVAAvatar.EditorTools
         [MenuItem("GameObject/IVA Avatar/Avatar", false, 10)]
         public static void CreateAvatar()
         {
-            IVARenderer existing = Object.FindObjectOfType<IVARenderer>();
+            IVARenderer existing = Object.FindFirstObjectByType<IVARenderer>();
             if (existing != null)
             {
                 Select(existing.gameObject);
@@ -41,7 +41,7 @@ namespace IVAAvatar.EditorTools
         public static void CreateDemo()
         {
             // Avatar
-            IVARenderer avatar = Object.FindObjectOfType<IVARenderer>();
+            IVARenderer avatar = Object.FindFirstObjectByType<IVARenderer>();
             if (avatar == null)
             {
                 var go = new GameObject(AvatarName);
@@ -68,7 +68,7 @@ namespace IVAAvatar.EditorTools
             framing.orthographicSize = 1f;
 
             // Slider panel
-            if (Object.FindObjectOfType<IVAParameterPanel>() == null)
+            if (Object.FindFirstObjectByType<IVAParameterPanel>() == null)
             {
                 var panelGO = new GameObject("IVA Parameter Panel");
                 Undo.RegisterCreatedObjectUndo(panelGO, "Create IVA Demo");
@@ -86,7 +86,7 @@ namespace IVAAvatar.EditorTools
         [MenuItem("Tools/IVA Avatar/Log Parameters")]
         public static void LogParameters()
         {
-            IVARenderer avatar = Object.FindObjectOfType<IVARenderer>();
+            IVARenderer avatar = Object.FindFirstObjectByType<IVARenderer>();
             var names = IVAParameters.Names;
             Debug.Log("[IVA] " + names.Count + " parameter(s):");
             for (int i = 0; i < names.Count; i++)
