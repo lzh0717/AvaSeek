@@ -1,6 +1,15 @@
-# IVA Avatar
+# AvaSeek
 
-A fully parameterised, procedurally drawn assistant face for Unity.
+*Personalise In-Vehicle Assistant Design Using Bayesian Optimisation*
+
+---
+
+## IVA Avatar
+
+This repository holds the **avatar package** from that project, extracted so it can be
+used on its own: a fully parameterised, procedurally drawn assistant face for Unity.
+The optimisation side is not included here - the avatar is optimizer-agnostic and can
+be driven by anything that produces named values.
 
 Every facial feature — the face outline, eyes, pupils, mouth, ears, stroke style, colour
 and waveform — is a **named, ranged parameter**. Nothing is modelled, textured or
