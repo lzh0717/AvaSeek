@@ -11,17 +11,15 @@ That makes it useful whenever a face has to be *searched* rather than *authored*
 studies on appearance, A/B design comparisons, parameter sweeps, or any optimizer that
 proposes values and wants to see the result.
 
-![demo](Documentation~/demo.gif)
-
 ## Install
 
-Unity **2021.3 or newer**. Works with the Built-in Render Pipeline and URP (the material
+Unity **2022.3 or newer** (verified on 2022.3 and Unity 6). Works with the Built-in Render Pipeline and URP (the material
 shader is resolved with a fallback chain, no shader asset is shipped).
 
 **Package Manager → Add package from git URL:**
 
 ```bash
-https://github.com/<your-username>/iva-avatar.git
+https://github.com/lzh0717/AvaSeek.git
 ```
 
 ## Try it in 30 seconds
