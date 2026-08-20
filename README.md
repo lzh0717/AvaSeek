@@ -1,6 +1,6 @@
 # AvaSeek
 
-*Personalise In-Vehicle Assistant Design Using Bayesian Optimisation*
+*In-Vehicle Assistant Design Parameter*
 
 ---
 
